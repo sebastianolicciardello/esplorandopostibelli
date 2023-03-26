@@ -1,0 +1,131 @@
+a {
+    cursor: pointer;
+    z-index: 3;
+}
+
+a.button {
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 100px;
+}
+
+a:link {
+    color: white;
+    text-decoration: none
+}
+
+a:visited {
+    color: white;
+    text-decoration: none
+}
+
+a.button:hover {
+    background-color: white;
+    color: black;
+}
+
+body {
+    color: rgba(26, 26, 26, .6);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+.button,
+footer address,
+#links {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#buttons {
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+#buttons a {
+    margin: 0% 15%;
+}
+
+footer {
+    background-color: rgb(31, 31, 31);
+    color: rgba(255, 255, 255, .8);
+    padding: 25px;
+    text-align: center;
+}
+
+footer p {
+    color: rgba(255, 255, 255, .4);
+}
+
+header {
+    color: white;
+    background-image: url("https://i.postimg.cc/W10DSvD5/header-welcome.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Inserisce overlay prima del contenuto*/
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+header h2 {
+    font-weight: normal;
+    text-align: center;
+    z-index: 1;
+    font-size: 1.8em;
+    letter-spacing: 4px;
+    margin-bottom: 5%;
+    margin-top: -15%;
+}
+
+header h1 {
+    font-weight: normal;
+    text-align: center;
+    z-index: 1;
+    font-size: 3.3em;
+    letter-spacing: 4px;
+    margin-bottom: 5%;
+    margin-top: -2%;
+}
+
+
+
+/* MOBILE MEDIA QUERY */
+
+@media (max-width: 700px) {
+    header {
+        height: 500px;
+        line-height: 1.2;
+    }
+
+    #buttons {
+        margin-top: 10%;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+        margin-top: -1%;
+    }
+
+    header h2 {
+        margin-top: -25%;
+        margin-bottom: 10%;
+    }
+}

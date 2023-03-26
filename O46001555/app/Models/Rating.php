@@ -1,0 +1,25 @@
+<?php
+namespace App\Models;
+use Illuminate\Database\Eloquent\Model;
+
+class Rating extends Model
+{
+    public $timestamps = false;
+    protected $fillable = [
+        'place',
+        'user',
+        'rate'
+    ];
+
+    public function places()
+    {
+        return $this->belongsTo('Place');
+    }
+
+    public function users()
+    {
+        return $this->belongsTo('User');
+    }
+}
+
+?>

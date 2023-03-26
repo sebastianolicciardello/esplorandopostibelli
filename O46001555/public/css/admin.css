@@ -1,0 +1,376 @@
+a,
+button.mini_button,
+button.mini_button_add {
+    cursor: pointer;
+    z-index: 3;
+    background-color: white;
+    color: black;
+}
+
+a:link,a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+p a:link,
+p a:visited {
+    color: darkcyan;
+}
+
+a.mini_button,
+button.mini_button,
+button.mini_button_add {
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 100px;
+}
+
+a.mini_button:hover,
+button.mini_button:hover,
+button.mini_button_add:hover {
+    background-color: black;
+    color: white;
+}
+
+.centered {
+    text-align: center;
+    font-size: 1.7em;
+}
+
+body,
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    color: black;
+}
+
+footer address,
+a.mini_button,
+button.mini_button,
+button.mini_button_add,
+input[type="submit"] {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    outline: none
+}
+
+footer {
+    background-color: rgb(31, 31, 31);
+    color: rgba(255, 255, 255, .8);
+    padding: 75px;
+    text-align: center;
+}
+
+footer p {
+    color: rgba(255, 255, 255, .4);
+}
+
+header nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: .875em;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+#links a {
+    margin: 5px;
+}
+
+#logo {
+    font-size: 2em;
+}
+
+#amm,
+form {
+    margin: 3% 2.4%;
+}
+
+.hidden {
+    display: none;
+}
+
+section button.mini_button {
+    margin-bottom: 2%;
+}
+
+#placeName,
+#primaryImg,
+#routeImg,
+#routeUrl,
+#locality,
+#difficulty,
+#one_img,
+#two_img,
+#three_img,
+#four_img,
+#five_img {
+    height: 15px;
+    margin-top: 0.3%;
+    display: block;
+}
+
+input {
+    padding: 15px 22px;
+    margin: 10px 5px;
+    font-size: 1.2em;
+}
+
+input[type="text"] {
+    border: 1px solid black;
+    border-radius: 20px;
+    outline: none;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.error_form {
+    z-index: 3;
+    color: rgb(161, 0, 0);
+    font-weight: bold;
+    margin-bottom: 10%;
+    margin-top: -2%;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+input[type="text"].vuoto {
+    border: 3px solid rgba(255, 0, 0, 0.61);
+}
+
+input[type="submit"] {
+    padding: 10px 15px;
+    border: 2px solid black;
+    border-radius: 100px;
+    cursor: pointer;
+    color: black;
+    margin-top: 12%;
+    background-color: white;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: black;
+    color: white;
+}
+
+div.buttons_add {
+    display: flex;
+    align-items: center;
+    margin-top: -15%;
+}
+
+.confirm {
+    color: mediumseagreen;
+}
+
+.deletePlace,
+.remove {
+    color: rgb(129, 2, 2);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.deletePlace:hover,
+.remove:hover {
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    letter-spacing: -0.5px;
+    font-size: 1.2em;
+}
+
+.hover:hover {
+    background-color: #f5f5f5;
+}
+
+#newMessage {
+    margin: 0% 3%;
+    margin-bottom: 10%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    border-radius: 20px;
+    padding: 2% 2%;
+    font-size: 1.3em;
+    outline: none;
+    resize: none;
+    height: 150px;
+    text-align: left;
+    margin-bottom: 3%;
+}
+
+#messages {
+    padding: 0% 1%;
+    margin: 2% 10%;
+}
+
+.single {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 1%;
+    border-radius: 20px;
+    border: 0.7px solid #cecece63;
+}
+
+.single:hover {
+    background-color: #f5f5f5;
+}
+
+.username,
+.date,
+.text {
+    margin: 1% 0%;
+}
+
+.username {
+    letter-spacing: -0.3px;
+    font-size: 1.1em;
+    width: 180px;
+}
+
+.date {
+    color: rgb(134, 134, 134);
+    font-size: 0.7em;
+    width: 100px;
+}
+
+.remove {
+    font-size: 0.7em;
+}
+
+.text {
+    overflow-wrap: anywhere;
+    font-size: 0.9em;
+    width: 900px;
+}
+
+h3 {
+    margin: 3.1% 0%;
+    margin-top: 3.9%;
+}
+
+#submitmessage {
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 100px;
+    background-color: white;
+    margin-top: -1%;
+}
+
+#submitmessage:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#formmessage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* MOBILE MEDIA QUERY */
+
+@media (max-width: 500px) {
+    #logo {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 700px) {
+
+    div.buttons_add {
+        margin-top: -15%;
+    }
+
+    .error_form {
+        margin-top: 0%;
+    }
+
+    form div label,
+    form.form_class {
+        display: flex;
+        margin: 0% 5%;
+        flex-direction: column;
+    }
+
+    #amm {
+        margin: 0% 5%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 800px) {
+    .text {
+        font-size: 0.7em;
+        width: 350px;
+    }
+
+    .date {
+        font-size: 0.6em;
+        width: 80px;
+    }
+
+    .username {
+        font-size: 0.8em;
+        width: 115px;
+    }
+
+    textarea {
+        height: 200px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 1000px) {
+    #messages {
+        margin: 2% 15%;
+    }
+}

@@ -1,0 +1,363 @@
+a,
+button {
+    cursor: pointer;
+    z-index: 3;
+}
+
+a:link,
+a:visited {
+    color: black;
+    text-decoration: none
+}
+
+a.mini_button {
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 100px;
+}
+
+a.mini_button:hover {
+    background-color: black;
+    color: white;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    color: black;
+}
+
+#logo {
+    font-size: 2em;
+}
+
+h3,
+#h2container {
+    margin-bottom: 10px;
+}
+
+footer address,
+#links,
+.links-mobile {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: rgb(31, 31, 31);
+    color: rgba(255, 255, 255, .8);
+    padding: 75px;
+    text-align: center;
+}
+
+footer p {
+    color: rgba(255, 255, 255, .4);
+}
+
+nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    font-size: .875em;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    background-color: white;
+}
+
+#menu {
+    display: none;
+}
+
+#links a {
+    margin: 5px;
+}
+
+.links-mobile {
+    display: none;
+    font-size: 1.5em;
+}
+
+.show-mobile {
+    display: none;
+}
+
+#menu {
+    position: fixed;
+    top: 3%;
+    right: 3%;
+}
+
+.margin {
+    margin: 50% 0%;
+}
+
+#spazio {
+    margin: 7% 0%;
+}
+
+#favoritesUser,
+#places {
+    margin: 5% 3%;
+}
+
+.placeContainer {
+    margin: 1% 1%;
+    padding: 0.5% 0.5%;
+    width: auto;
+    text-align: center;
+    line-height: 150%;
+    font-size: 1.1em;
+}
+
+.mini_image {
+    max-height: 200px;
+    max-width: 200px;
+    border-radius: 20px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+#places_container,
+#favorites_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mini_description {
+    font-size: 0.7em;
+    line-height: 140%;
+}
+
+.favoriteButton {
+    background-color: white;
+    margin-left: 4%;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+a.remove_button {
+    border: 1px solid rgb(161, 0, 0);
+    color: rgb(161, 0, 0);
+    ;
+}
+
+a.remove_button:hover {
+    background-color: rgb(161, 0, 0);
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+div.mini_place {
+    min-width: 170px;
+}
+
+.bigContainer {
+    height: 300%;
+    width: 300%;
+}
+
+.gallery,
+.image_route {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.mini_image_details {
+    max-height: 350px;
+    max-width: 350px;
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.big_image {
+    max-height: 450px;
+    max-width: 450px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.voteButtons {
+    display: flex;
+    font-size: 1.5em;
+    margin: 1% 0%;
+    justify-content: space-evenly;
+    width: 200px;
+}
+
+.voteContainer {
+    display: flex;
+    justify-content: center;
+}
+
+button.mini_button_close {
+    cursor: pointer;
+    z-index: 3;
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 100px;
+    margin-top: 10px;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+button.mini_button_close:hover {
+    background-color: black;
+    color: white;
+}
+
+.padding {
+    padding-left: 10px;
+}
+
+.paddingBig {
+    padding-left: 20px;
+}
+
+select {
+    border: 1px solid black;
+    padding: 0.2% 0.5%;
+    border-radius: 20px;
+    outline: none;
+    font-size: 0.9em;
+    cursor: pointer;
+    margin: 1% 0.5%;
+}
+
+input[type='submit'] {
+    border: 1px solid black;
+    padding: 0.3% 0.6%;
+    border-radius: 20px;
+    outline: none;
+    font-size: 0.9em;
+    cursor: pointer;
+    margin: 1% 0.5%;
+    background-color: white;
+}
+
+select:hover,
+input[type='submit']:hover {
+    background-color: black;
+    color: white;
+}
+
+h4 {
+    margin-top: 0%;
+}
+
+div.vote1,
+div.vote2,
+div.vote3,
+div.vote4,
+div.vote5 {
+    cursor: pointer;
+}
+
+
+/* MOBILE MEDIA QUERY */
+
+@media (max-width: 700px) {
+    body {
+        font-size: 14px;
+    }
+    .mini_image_details {
+        max-height: 250px;
+        max-width: 250px;
+        border-radius: 20px;
+        padding: 5px;
+        margin-top: 5px;
+    }
+    .big_image {
+        max-height: 380px;
+        max-width: 380px;
+        border-radius: 20px;
+        padding: 10px;
+    }
+    .voteButtons {
+        display: flex;
+        font-size: 1.6em;
+        margin: 3% 0%;
+        justify-content: space-evenly;
+        width: 200px;
+    }
+    .big_description {
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        justify-content: space-evenly;
+    }
+    #favoritesUser,
+    #places {
+        margin: 7% 5%;
+    }
+    #spazio {
+        margin: 15% 0%;
+    }
+    .placeContainer {
+        margin: 2% 0.5%;
+        line-height: 150%;
+        font-size: 1em;
+    }
+    .show-mobile {
+        display: flex;
+        flex-direction: column;
+        margin: 2% 0%;
+    }
+    .show-mobile a {
+        line-height: 200%;
+    }
+    a.mini_button {
+        padding: 2px 5px;
+        border: 1px solid black;
+        border-radius: 100px;
+        width: fit-content;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    #links {
+        font-size: 0.8em;
+    }
+    #logo {
+        font-size: 1.8em;
+    }
+    #h2container {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 900px) {
+    #h2container {
+        margin-top: 90px;
+    }
+}
+
+@media (max-width: 800px) {
+    #links {
+        display: none;
+    }
+    #menu {
+        display: flex;
+    }
+    #logo {
+        font-size: 1.8em;
+    }
+}

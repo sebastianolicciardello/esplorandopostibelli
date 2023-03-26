@@ -1,0 +1,158 @@
+a {
+    cursor: pointer;
+    z-index: 3;
+    font-size: 0.9em;
+}
+
+a:link {
+    color: rgba(255, 255, 255, 0.87);
+    text-decoration: none
+}
+
+a:visited {
+    color: rgba(255, 255, 255, 0.87);
+    text-decoration: none
+}
+
+body {
+    color: rgba(26, 26, 26, .6);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+footer address,
+input[type="submit"],
+input[type="password"],
+input[type="username"] {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: rgb(31, 31, 31);
+    color: rgba(255, 255, 255, .8);
+    padding: 25px;
+    text-align: center;
+}
+
+footer p {
+    color: rgba(255, 255, 255, .4);
+}
+
+header {
+    color: white;
+    background-image: url("https://i.postimg.cc/DfD8TZLC/login.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Inserisce overlay sopra il contenuto*/
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#username,
+#password,
+#conf_password {
+    height: 15px;
+    margin-top: 3%;
+    display: block;
+    background: rgba(255, 255, 255, 0.603);
+    font-size: 1.5em;
+}
+
+form {
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+input {
+    padding: 15px 22px;
+    margin: 10px 5px;
+    font-size: 1.2em;
+}
+
+input[type="text"],
+input[type="password"] {
+    border: none;
+    border-radius: 20px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none
+}
+
+input[type="text"].vuoto,
+input[type="password"].vuoto {
+    border: 3px solid rgba(255, 0, 0, 0.61);
+}
+
+input[type="submit"] {
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 100px;
+    cursor: pointer;
+    z-index: 3;
+    color: white;
+    background-color: transparent;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: black;
+}
+
+#error_confirm,
+#error_user,
+#error_general {
+    z-index: 3;
+    color: rgb(161, 0, 0);
+    font-weight: bold;
+    margin: 10px 0px;
+    background: rgba(255, 255, 255, 0.603);
+    border-radius: 20px;
+    padding: 6px 6px;
+}
+
+#validation {
+    z-index: 3;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 10px 30px;
+    font-size: 0.7em;
+}
+
+.hidden {
+    display: none;
+}
+
+/* MOBILE MEDIA QUERY */
+
+@media (max-width: 700px) {
+    header {
+        height: 500px;
+        line-height: 1.2;
+    }
+}
